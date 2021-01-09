@@ -28,6 +28,7 @@ setuptools.setup(
     install_requires=[
         "requests",
         "numpy",
+        "dataclasses; python_version<'3.7'",
     ],
     extras_require={
         "dev": [
