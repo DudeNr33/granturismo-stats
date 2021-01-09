@@ -25,6 +25,7 @@ class EventDetails:
 
 class EventCalendar:
     """Overview of currently available events"""
+    # pylint: disable=too-many-arguments
     def __init__(self, daily_a=None, daily_b=None, daily_c=None, nations=None, manufacturers=None):
         self.races = {
             SportsMode.DAILY_A: daily_a,

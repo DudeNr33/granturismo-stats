@@ -31,7 +31,7 @@ def fixture_gtsport_api(requests_mock):
 def _setup_event_endpoint(api_mock):
     sample_responses = RESOURCE_DIR / "responses" / "event"
 
-    def callback(request, context):
+    def callback(request, context):  # pylint: disable=unused-argument
         form_data = _parse_request_body(request.body)
         if form_data[PARAM_JOB] == "1":
             event_id_to_response = {
@@ -42,19 +42,22 @@ def _setup_event_endpoint(api_mock):
                 "24160": "event_details_manufacturer.json",
             }
             return (sample_responses / event_id_to_response[form_data["event_id_csv"]]).read_text(encoding="utf-8")
-        elif form_data[PARAM_JOB] == "3":
+        if form_data[PARAM_JOB] == "3":
             return (sample_responses / "event_calendar.json").read_text(encoding="utf-8")
+        return "{}"
 
     endpoint = "event/"
     api_mock.post(BASE_URL + endpoint, text=callback)
 
 
 def _setup_ranking_endpoint(api_mock):
-    pass
+    endpoint = "ranking/"
+    api_mock.post(BASE_URL + endpoint)
 
 
 def _parse_request_body(body):
     parts = urllib.parse.unquote(body).split("&")
+    # pylint: disable=unnecessary-comprehension
     return {
         key: value
         for key, value in [

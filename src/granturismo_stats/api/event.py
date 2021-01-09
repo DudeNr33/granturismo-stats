@@ -2,6 +2,7 @@
 Author: Andreas Finkler
 Created: 11.12.2020
 """
+from abc import ABC
 
 from granturismo_stats.api.base import BaseRequest, JOB
 from granturismo_stats.entities.event import EventDetails, EventCalendar
@@ -15,7 +16,7 @@ JOB_ID_EVENT_DETAILS = 1
 JOB_ID_EVENT_CALENDAR = 3
 
 
-class EventRequest(BaseRequest):
+class EventRequest(BaseRequest, ABC):
     """
     Base class for /event endpoint.
     """
@@ -30,7 +31,7 @@ class EventDetailsRequest(EventRequest):
         """
         :param event_id: ID of the individual race event.
         """
-        super(EventDetailsRequest, self).__init__()
+        super().__init__()
         self.form_data[JOB] = JOB_ID_EVENT_DETAILS
         self.form_data[EVENT_ID_CSV] = str(event_id)
 
@@ -43,7 +44,7 @@ class EventCalendarRequest(EventRequest):
     Current event calendar request.
     """
     def __init__(self):
-        super(EventCalendarRequest, self).__init__()
+        super().__init__()
         self.form_data[JOB] = JOB_ID_EVENT_CALENDAR
         self.form_data[CHANNEL_ID_CSV] = ",".join(str(sports_mode.value) for sports_mode in SportsMode)
 

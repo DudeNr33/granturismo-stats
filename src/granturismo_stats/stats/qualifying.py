@@ -38,5 +38,5 @@ class QualifyingTimes:
     def mean(self):
         return np.mean(self.scores)
 
-    def percentile(self, p):
-        return np.percentile(self.scores, p)
+    def percentile(self, percent):
+        return np.percentile(self.scores, percent)

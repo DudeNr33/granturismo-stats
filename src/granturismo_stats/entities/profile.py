@@ -9,6 +9,7 @@ from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
 
 @dataclass
 class User:
+    """Data class for a user profile of Gran Turismo Sport"""
     name: str
     number: int
     country: str

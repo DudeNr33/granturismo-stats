@@ -4,6 +4,7 @@ Created: 11.12.2020
 
 This module contains the basic logic for executing a request against the Gran Turismo Sport API.
 """
+from abc import ABC
 
 import requests
 
@@ -11,7 +12,7 @@ BASE_URL = "https://www.gran-turismo.com/de/api/gt7sp/"
 JOB = "job"
 
 
-class BaseRequest:
+class BaseRequest(ABC):
     """
     Base class for http request handling.
     """

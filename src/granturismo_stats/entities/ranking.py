@@ -11,6 +11,7 @@ from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
 
 @dataclass()
 class QualifyingResult:
+    """Data class for a single entry in the qualification leaderboard."""
     user: User
     score: int  # qualifying time in seconds
     ranking_id: int
@@ -31,6 +32,7 @@ class QualifyingResult:
 
 @dataclass
 class Leaderboard:
+    """Data class for a qualification leaderboard."""
     entries: List[QualifyingResult]
 
     @classmethod

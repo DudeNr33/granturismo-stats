@@ -7,7 +7,7 @@ from granturismo_stats.api import event
 from granturismo_stats.entities.event import EventCalendar, EventDetails
 
 
-def test_event_calendar_request(gtsport_api):
+def test_event_calendar_request(gtsport_api):  # pylint: disable=unused-argument
     """
     When the request can be executed successfully, an EventCalendar entity must be returned.
     """
@@ -15,7 +15,7 @@ def test_event_calendar_request(gtsport_api):
     assert isinstance(result, EventCalendar)
 
 
-def test_event_details_request(gtsport_api):
+def test_event_details_request(gtsport_api):  # pylint: disable=unused-argument
     """
     When the request can be executed successfully, an EventCalendar entity must be returned.
     """
@@ -23,7 +23,7 @@ def test_event_details_request(gtsport_api):
     assert isinstance(result, EventDetails)
 
 
-def test_event_details_passes_correct_form_data(gtsport_api):
+def test_event_details_passes_correct_form_data(gtsport_api):  # pylint: disable=unused-argument
     """
     An EventDetailsRequest must pass the event id in the request.
     """

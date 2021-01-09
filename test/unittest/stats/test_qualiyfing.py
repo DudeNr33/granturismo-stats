@@ -60,7 +60,7 @@ def test_mean(raw_data, qualifying_times):
 
 
 @pytest.mark.parametrize("percentile", [5, 10, 50])
-def test_percentile(raw_data, qualifying_times, percentile):
+def test_percentile(qualifying_times, percentile):
     """
     It must be possible to get percentiles from the qualifying results.
     """

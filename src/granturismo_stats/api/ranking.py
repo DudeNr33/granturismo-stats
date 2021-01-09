@@ -3,6 +3,7 @@ Author: Andreas Finkler
 Created: 11.12.2020
 """
 import os
+from abc import ABC
 from copy import copy
 from concurrent import futures
 from operator import itemgetter
@@ -23,7 +24,7 @@ MAX_WORKERS = (os.cpu_count() or 1) * 5
 BATCH_SIZE = 1000
 
 
-class RankingRequest(BaseRequest):
+class RankingRequest(BaseRequest, ABC):
     """Base request for endpoint ranking/"""
     URI = "ranking/"
 
@@ -31,7 +32,7 @@ class RankingRequest(BaseRequest):
 class UserRankingRequest(RankingRequest):
     """Get the qualifying result for a given user."""
     def __init__(self, board_id, user_no):
-        super(UserRankingRequest, self).__init__()
+        super().__init__()
         self.form_data = {
             JOB: JOB_ID_USER_RANKING,
             BOARD_ID: board_id,
@@ -45,7 +46,7 @@ class UserRankingRequest(RankingRequest):
 class LeaderboardRequest(RankingRequest):
     """Get the leaderboard of a specific event"""
     def __init__(self, board_id):
-        super(LeaderboardRequest, self).__init__()
+        super().__init__()
         self.form_data = {
             JOB: JOB_ID_LEADERBOARD,
             BOARD_ID: board_id,

@@ -6,7 +6,7 @@ import json
 
 import pytest
 
-from granturismo_stats.entities.event import EventDetails, EventCalendar, CalendarEntry
+from granturismo_stats.entities.event import EventDetails, EventCalendar
 from granturismo_stats.entities.race import SportsMode
 
 
