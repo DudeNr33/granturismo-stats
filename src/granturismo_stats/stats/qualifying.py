@@ -8,7 +8,7 @@ from operator import attrgetter
 
 import numpy as np
 
-from gtsport.entities.ranking import Leaderboard
+from granturismo_stats.entities.ranking import Leaderboard
 
 
 class QualifyingTimes:

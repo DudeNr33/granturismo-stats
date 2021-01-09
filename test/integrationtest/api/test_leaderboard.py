@@ -3,8 +3,8 @@ Author: Andreas Finkler
 Created: 13.12.2020
 """
 
-from gtsport import api
-from gtsport.entities.race import SportsMode
+from granturismo_stats import api
+from granturismo_stats.entities.race import SportsMode
 
 
 def test_get_leaderboard():

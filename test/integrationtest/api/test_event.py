@@ -7,8 +7,8 @@ The tests verify that the requests can be made and the data gets converted.
 """
 import pytest
 
-from gtsport import api
-from gtsport.entities.race import SportsMode
+from granturismo_stats import api
+from granturismo_stats.entities.race import SportsMode
 
 
 @pytest.mark.parametrize(

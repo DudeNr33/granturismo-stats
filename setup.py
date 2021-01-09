@@ -28,11 +28,13 @@ setuptools.setup(
     install_requires=[
         "requests",
         "numpy",
-        "matplotlib",
-        "cached-property",
     ],
     extras_require={
+        "dev": [
+            "tox",
+        ],
         "tests": [
+            "pylint",
             "pytest",
             "requests-mock",
         ]

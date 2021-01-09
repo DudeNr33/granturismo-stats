@@ -7,8 +7,8 @@ import json
 import pytest
 import numpy as np
 
-from gtsport.entities.ranking import Leaderboard, QualifyingResult
-from gtsport.stats.qualifying import QualifyingTimes
+from granturismo_stats.entities.ranking import Leaderboard, QualifyingResult
+from granturismo_stats.stats.qualifying import QualifyingTimes
 
 
 @pytest.fixture(scope="module", name="raw_data")

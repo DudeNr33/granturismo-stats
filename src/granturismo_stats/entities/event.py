@@ -4,7 +4,7 @@ Created: 12.12.2020
 """
 from dataclasses import dataclass
 
-from gtsport.entities.race import SportsMode
+from granturismo_stats.entities.race import SportsMode
 
 
 @dataclass

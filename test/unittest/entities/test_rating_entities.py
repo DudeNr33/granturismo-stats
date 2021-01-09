@@ -4,7 +4,7 @@ Created: 22.12.2020
 """
 import pytest
 
-from gtsport.entities.rating import DriverRating, SportsmanshipRating
+from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
 
 
 @pytest.mark.parametrize(

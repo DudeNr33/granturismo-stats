@@ -7,8 +7,8 @@ from copy import copy
 from concurrent import futures
 from operator import itemgetter
 
-from gtsport.api.base import BaseRequest, JOB
-from gtsport.entities.ranking import Leaderboard, QualifyingResult
+from granturismo_stats.api.base import BaseRequest, JOB
+from granturismo_stats.entities.ranking import Leaderboard, QualifyingResult
 
 
 BOARD_ID = "board_id"

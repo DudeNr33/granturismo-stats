@@ -5,8 +5,8 @@ Created: 13.12.2020
 from dataclasses import dataclass
 from typing import List
 
-from gtsport.entities.profile import User
-from gtsport.entities.rating import DriverRating, SportsmanshipRating
+from granturismo_stats.entities.profile import User
+from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
 
 
 @dataclass()

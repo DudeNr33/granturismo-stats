@@ -3,9 +3,9 @@ Author: Andreas Finkler
 Created: 11.12.2020
 """
 
-from gtsport.api.base import BaseRequest, JOB
-from gtsport.entities.event import EventDetails, EventCalendar
-from gtsport.entities.race import SportsMode
+from granturismo_stats.api.base import BaseRequest, JOB
+from granturismo_stats.entities.event import EventDetails, EventCalendar
+from granturismo_stats.entities.race import SportsMode
 
 
 EVENT_ID_CSV = "event_id_csv"

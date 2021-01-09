@@ -3,11 +3,11 @@ Author: Andreas Finkler
 Created: 11.12.2020
 """
 
-from gtsport.entities.race import SportsMode
-from gtsport.entities.event import EventDetails, EventCalendar
-from gtsport.entities.ranking import Leaderboard
-from gtsport.api.event import EventCalendarRequest, EventDetailsRequest
-from gtsport.api.ranking import LeaderboardRequest
+from granturismo_stats.entities.race import SportsMode
+from granturismo_stats.entities.event import EventDetails, EventCalendar
+from granturismo_stats.entities.ranking import Leaderboard
+from granturismo_stats.api.event import EventCalendarRequest, EventDetailsRequest
+from granturismo_stats.api.ranking import LeaderboardRequest
 
 
 def get_event_details(sports_mode: SportsMode) -> EventDetails:

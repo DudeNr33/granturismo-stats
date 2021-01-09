@@ -4,7 +4,7 @@ Created: 13.12.2020
 """
 from dataclasses import dataclass
 
-from gtsport.entities.rating import DriverRating, SportsmanshipRating
+from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
 
 
 @dataclass

@@ -6,8 +6,8 @@ import json
 
 import pytest
 
-from gtsport.entities.event import EventDetails, EventCalendar, CalendarEntry
-from gtsport.entities.race import SportsMode
+from granturismo_stats.entities.event import EventDetails, EventCalendar, CalendarEntry
+from granturismo_stats.entities.race import SportsMode
 
 
 @pytest.mark.parametrize(
