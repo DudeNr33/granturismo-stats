@@ -1,0 +1,18 @@
+language: python
+cache: pip
+python:
+  - 3.6
+  - 3.7
+  - 3.8
+  - 3.9
+
+matrix:
+  include:
+    - stage: integration test
+      env:
+        - TOXENV=py39-tests -- test/integrationtest
+
+install:
+  - pip install tox-travis
+
+script: tox
