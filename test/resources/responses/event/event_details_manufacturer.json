@@ -1,0 +1,230 @@
+{
+  "event": [
+    {
+      "event_id": "24160",
+      "create_time": "2020-11-20T08:38:35Z",
+      "update_time": "2020-11-20T08:38:35Z",
+      "value": [
+        {
+          "GameParameter": {
+            "championship": 0,
+            "events": [
+              {
+                "event_id": 24160,
+                "championship_id": 12,
+                "season_id": 2653,
+                "round_id": 5,
+                "championship_color": "#960014",
+                "game_mode": "SPORT_CHAMPIONSHIP",
+                "event_type": "RACE",
+                "sports_mode": "MANUFACTURER",
+                "information": {
+                  "title": {
+                    "JP": "FIA GT マニュファクチャラーシリーズ",
+                    "US": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "GB": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "FR": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "DE": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "IT": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "ES": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "PT": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "NL": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "RU": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "KR": "FIA GT \u200b매뉴팩처러 \u200b시리즈",
+                    "TW": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "EL": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "TR": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "PL": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "CZ": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "BP": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "MS": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "AR": "FIA Gran Turismo Championship // Manufacturer Series",
+                    "TH": "FIA Gran Turismo Championship // Manufacturer Series"
+                  },
+                  "one_line_title": {
+                    "JP": "マニュファクチャラーシリーズ",
+                    "US": "Manufacturer Series",
+                    "GB": "Manufacturer Series",
+                    "FR": "Manufacturer Series",
+                    "DE": "Manufacturer Series",
+                    "IT": "Manufacturer Series",
+                    "ES": "Manufacturer Series",
+                    "PT": "Manufacturer Series",
+                    "NL": "Manufacturer Series",
+                    "RU": "Manufacturer Series",
+                    "KR": "\u200b매뉴팩처러 \u200b시리즈",
+                    "TW": "Manufacturer Series",
+                    "EL": "Manufacturer Series",
+                    "TR": "Manufacturer Series",
+                    "PL": "Manufacturer Series",
+                    "CZ": "Manufacturer Series",
+                    "BP": "Manufacturer Series",
+                    "MS": "Manufacturer Series",
+                    "AR": "Manufacturer Series",
+                    "TH": "Manufacturer Series"
+                  },
+                  "description": {
+                    "JP": "各国のマニュファクチャラーがしのぎを削る熾烈な戦い。プレイヤーはお好みのメーカーを選び、与えられたマシンでシーズンを戦う。あなた自身のドライビングで、お気に入りのメーカーを頂点に立たせよう！",
+                    "US": "In this intense battle between the most prominent automobile manufacturers around the world, players select their favorite car company and contest an entire season in assigned cars. You can be the one to bring racing glory to your favorite car maker!",
+                    "GB": "This is a heated battle between various manufacturers around the world. Players select their favourite manufacturer and fight through the season in their assigned cars. Lead your favourite car manufacturer to the top with your own hands on the wheel!",
+                    "FR": "Une lutte acharnée entre différents constructeurs internationaux. Les joueurs sélectionnent leur constructeur et participent à la saison dans la voiture qui leur a été assignée. Menez votre constructeur au sommet, du bout du volant !",
+                    "DE": "Ein hitziger Wettkampf zwischen diversen Herstellern aus aller Welt. Die Spieler wählen ihren Lieblingshersteller und kämpfen sich mit ihren zugewiesenen Fahrzeugen durch die Saison. Führen Sie Ihren Lieblingsfahrzeughersteller an die Spitze und übernehmen Sie dabei selbst das Steuer!",
+                    "IT": "Un'accesa competizione fra le varie case costruttrici, sui tracciati di tutto il mondo. Scegli la casa che preferisci e affronta la stagione a bordo delle sue vetture. Impugna il volante e guida alla vittoria il bolide del costruttore che più ti piace.",
+                    "ES": "Un acalorado combate entre distintos fabricantes de todo el mundo. Los jugadores seleccionan a su fabricante favorito y compiten a lo largo de la temporada en sus coches asignados. ¡Ponte al volante para llevar a tu fabricante favorito a lo más alto!",
+                    "PT": "Um confronto disputado entre vários fabricantes de todo o mundo. Os jogadores escolhem o seu fabricante favorito e disputam uma época nos carros atribuídos. Coloca-te atrás do volante e leva o teu fabricante favorito ao topo!",
+                    "NL": "Dit is een verhitte strijd tussen verschillende internationale merken. Iedereen kiest zijn of haar favoriete merk en racet een seizoen lang met de toegewezen auto. Neem plaats achter het stuur en leid je favoriete automerk naar de top!",
+                    "RU": "Напряженная борьба между автопроизводителями из разных стран мира. Каждый участник заключает контракт с одной из автомобильных компаний и выступает в течение сезона на предоставленных ей машинах. Внесите свой вклад в победу любимой марки!",
+                    "KR": "\u200b각국의 \u200b매뉴팩처러가 \u200b벌이는 \u200b치열한 \u200b대결. \u200b플레이어는 \u200b좋아하는 \u200b메이커를 \u200b선택하고, \u200b주어진 \u200b머신으로 \u200b시즌을 \u200b치른다. \u200b나만의 \u200b드라이빙으로 \u200b좋아하는 \u200b메이커를 \u200b정점에 \u200b세우자!",
+                    "TW": "來自世界各地的多家車廠將在此一決高下。玩家可選擇各自喜歡的車廠，並駕駛著車廠配發的車輛在賽季期間過關斬將。親自帶領你喜愛的車廠邁向冠軍吧！",
+                    "EL": "Μια έντονη αναμέτρηση ανάμεσα σε διάφορους κατασκευαστές από όλο τον κόσμο. Οι παίκτες επιλέγουν τους αγαπημένους τους κατασκευαστές και αγωνίζονται σε όλη τη διάρκεια της σεζόν με τα επιλεγμένα αυτοκίνητά τους. Πάρτε στα χέρια σας το τιμόνι και οδηγήστε τον αγαπημένο σας κατασκευαστή στην κορυφή!",
+                    "TR": "Bu, tüm dünyadan çeşitli üreticiler arasında geçen zorlu bir kapışmadır. Oyuncular sevdikleri üreticileri seçecek ve belirledikleri araçlarıyla sezon boyunca mücadele edecekler. Direksiyona geçerek sevdiğiniz otomobil üreticisinin üst sıraya çıkmasına öncülük edin!",
+                    "PL": "To zacięta walka producentów z całego świata. Gracze wybierają ulubionego producenta i walczą przez cały sezon, ścigając się jego samochodem. Poprowadź ulubionego producenta samochodów do zwycięstwa!",
+                    "CZ": "Jedná se o vypjatý závod mezi různými výrobci z celého světa. Hráč si vybere svého oblíbeného výrobce a závodí v sezoně v přidělených vozidlech. Dosáhněte se svým oblíbeným výrobcem automobilů nejlepší příčky díky vašim dovednostem a rukama na volantu!",
+                    "BP": "Esta é uma batalha acirrada entre vários construtores de todo o mundo. Os jogadores selecionam seu construtor favorito e competem ao longo da temporada com carros emprestados. Coloque suas mãos no volante e conduza seu construtor de carro favorito ao topo!",
+                    "MS": "Una batalla reñida entre varios fabricantes en todo el mundo. Los jugadores seleccionan a su fabricante favorito y compiten durante toda la temporada en los autos asignados. ¡Lleva a tu fabricante de autos favorito a la cima con tus propias manos al volante!",
+                    "AR": "إنها معركة ضارية بين جهات مصنعة متعددة من حول العالم. يختار اللاعبون الجهة المصنعة المفضلة لديهم ويتنافسون عبر الموسم من خلال سياراتهم المخصصة. ارتقِ بالجهة المصنعة المفضلة لديك إلى القمة بقيادتك أنت!",
+                    "TH": "\u200bนี่\u200bคือ\u200bการ\u200bต่อสู้\u200bอัน\u200bดุ\u200bเดือด\u200bระหว่าง\u200bผู้\u200bผลิต\u200bจาก\u200bทั่ว\u200bโลก \u200bผู้\u200bเล่น\u200bจะ\u200bได้\u200bเลือก\u200bผู้\u200bผลิต\u200bโปรด\u200bของ\u200bตน\u200bและ\u200bต่อสู้\u200bใน\u200bฤดูกาล\u200bแข่ง\u200bด้วย\u200bรถ\u200bที่\u200bได้\u200bรับ\u200bมอบ\u200bหมาย \u200bจง\u200bคว้า\u200bชัยชนะ\u200bมา\u200bให้\u200bผู้\u200bผลิต\u200bรถ\u200bยี่ห้อ\u200bโปรด\u200bด้วย\u200bสอง\u200bมือ\u200bของ\u200bคุณ\u200bเอง\u200bที่\u200bใช้\u200bจับ\u200bพวง\u200bมาลัย!"
+                  },
+                  "registration_notice": {
+                    "JP": "",
+                    "US": "",
+                    "GB": "",
+                    "FR": "",
+                    "DE": "",
+                    "IT": "",
+                    "ES": "",
+                    "PT": "",
+                    "NL": "",
+                    "RU": "",
+                    "KR": "",
+                    "TW": "",
+                    "EL": "",
+                    "TR": "",
+                    "PL": "",
+                    "CZ": "",
+                    "BP": "",
+                    "MS": "",
+                    "AR": "",
+                    "TH": ""
+                  },
+                  "event_target": {
+                    "JP": "2020/21 エキシビションシリーズ - シーズン 2",
+                    "US": "2020/21 Exhibition Series - Season 2",
+                    "GB": "2020/21 Exhibition Series - Season 2",
+                    "FR": "Exhibition Series 2020/21 – Saison 2",
+                    "DE": "Exhibition Series 2020/21 – Saison 2",
+                    "IT": "Exhibition Series 2020/21 - Stagione 2",
+                    "ES": "Exhibition Series 2020/2021 – Temporada 2",
+                    "PT": "Série de Exibição de 2020/21 - Temporada 2",
+                    "NL": "Exhibition-serie 2020/21 - Seizoen 2",
+                    "RU": "Выставочная серия 2020/21 - сезон 2",
+                    "KR": "2020/21 \u200b엑시비션 \u200b시리즈 - \u200b시즌 2",
+                    "TW": "2020/2021表演系列賽 – 第2季",
+                    "EL": "Πρωτάθλημα Επιδείξεων 2020/21 - Σεζόν 2",
+                    "TR": "2020/21 Gösteri Serisi - 2. Sezon",
+                    "PL": "2. sezon 2020/21 Exhibition Series",
+                    "CZ": "2. sezona exhibičního seriálu 2020/21",
+                    "BP": "Exhibition Series de 2020/21 - Temporada 2",
+                    "MS": "Exhibition Series 2020/21 - Temporada 2",
+                    "AR": "سلسلة سباقات المعرض 2020/21 - الموسم 2",
+                    "TH": "Exhibition Series 2020/21 \u200b– \u200bฤดูกาล\u200bที่ 2"
+                  },
+                  "event_restrict": {
+                    "JP": "2020/21 エキシビションシリーズ - シーズン 2",
+                    "US": "2020/21 Exhibition Series - Season 2",
+                    "GB": "2020/21 Exhibition Series - Season 2",
+                    "FR": "Exhibition Series 2020/21 – Saison 2",
+                    "DE": "Exhibition Series 2020/21 – Saison 2",
+                    "IT": "Exhibition Series 2020/21 - Stagione 2",
+                    "ES": "Exhibition Series 2020/2021 – Temporada 2",
+                    "PT": "Série de Exibição de 2020/21 - Temporada 2",
+                    "NL": "Exhibition-serie 2020/21 - Seizoen 2",
+                    "RU": "Выставочная серия 2020/21 - сезон 2",
+                    "KR": "2020/21 \u200b엑시비션 \u200b시리즈 - \u200b시즌 2",
+                    "TW": "2020/2021表演系列賽 – 第2季",
+                    "EL": "Πρωτάθλημα Επιδείξεων 2020/21 - Σεζόν 2",
+                    "TR": "2020/21 Gösteri Serisi - 2. Sezon",
+                    "PL": "2. sezon 2020/21 Exhibition Series",
+                    "CZ": "2. sezona exhibičního seriálu 2020/21",
+                    "BP": "Exhibition Series de 2020/21 - Temporada 2",
+                    "MS": "Exhibition Series 2020/21 - Temporada 2",
+                    "AR": "سلسلة سباقات المعرض 2020/21 - الموسم 2",
+                    "TH": "Exhibition Series 2020/21 \u200b– \u200bฤดูกาล\u200bที่ 2"
+                  },
+                  "logo_image_path": "img_1322_a926e4e44a3c807248bb490410236cd4.png",
+                  "flyer_image_path": "img_1323_e890383160a88542e33ad5c7443f24a0.png"
+                },
+                "entry_set": [
+                  {
+                    "entry_generate": {
+                      "player_entry_base_array": null
+                    }
+                  }
+                ],
+                "race": {
+                  "behavior_damage_type": "MIDDLE",
+                  "behavior_slip_stream_type": "REAL",
+                  "boost_level": null,
+                  "low_mu_type": "REAL",
+                  "entry_max": 20,
+                  "start_type": "FORMATION_ROLL_A",
+                  "consume_fuel": 5,
+                  "consume_tire": 8,
+                  "race_limit_laps": 15,
+                  "race_limit_minute": 0,
+                  "nos_amount_scale": 1.0,
+                  "pit_constraint": 0,
+                  "need_compound_use": "0",
+                  "limit_fuel_capacity": 0
+                },
+                "ranking": {
+                  "board_id": 1008358,
+                  "begin_date": null,
+                  "end_date": null
+                },
+                "regulation": {
+                  "limit_tire_f": 8,
+                  "need_tire_f": 8,
+                  "use_bop": 1,
+                  "tuning": 1,
+                  "need_driver_class": "-1",
+                  "car_category_types": [
+                    "GR4"
+                  ],
+                  "cars": null,
+                  "cars_count": 0
+                },
+                "refueling_speed": 7,
+                "track_index": 0,
+                "matching_method": 0,
+                "is_uncertain_event": 0,
+                "qualifier_initial_tank": -1,
+                "is_seasonal_event": 0,
+                "begin_date": null,
+                "end_date": null,
+                "online_timeattack_registration_key": null,
+                "online_timeattack_type": null,
+                "np_regions": null
+              }
+            ],
+            "online_room": {
+              "qualifier_consume_tire": -1,
+              "qualifier_consume_fuel": 0
+            },
+            "tracks": [
+              {
+                "course_code": "17a6b728375e4bd38c8267036c18128b",
+                "WeatherList": [
+                  {
+                    "weather_id": 214
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "40"
+      ]
+    }
+  ]
+}

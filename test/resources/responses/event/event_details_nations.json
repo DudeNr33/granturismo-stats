@@ -1,0 +1,230 @@
+{
+  "event": [
+    {
+      "event_id": "24213",
+      "create_time": "2020-11-20T08:38:36Z",
+      "update_time": "2020-11-20T08:38:36Z",
+      "value": [
+        {
+          "GameParameter": {
+            "championship": 0,
+            "events": [
+              {
+                "event_id": 24213,
+                "championship_id": 11,
+                "season_id": 2658,
+                "round_id": 5,
+                "championship_color": "#0a36a8",
+                "game_mode": "SPORT_CHAMPIONSHIP",
+                "event_type": "RACE",
+                "sports_mode": "NATIONS",
+                "information": {
+                  "title": {
+                    "JP": "FIA GT ネイションズカップ",
+                    "US": "FIA Gran Turismo Championship // Nations Cup",
+                    "GB": "FIA Gran Turismo Championship // Nations Cup",
+                    "FR": "FIA Gran Turismo Championship // Nations Cup",
+                    "DE": "FIA Gran Turismo Championship // Nations Cup",
+                    "IT": "FIA Gran Turismo Championship // Nations Cup",
+                    "ES": "FIA Gran Turismo Championship // Nations Cup",
+                    "PT": "FIA Gran Turismo Championship // Nations Cup",
+                    "NL": "FIA Gran Turismo Championship // Nations Cup",
+                    "RU": "FIA Gran Turismo Championship // Nations Cup",
+                    "KR": "FIA GT \u200b네이션스 \u200b컵",
+                    "TW": "FIA Gran Turismo Championship // Nations Cup",
+                    "EL": "FIA Gran Turismo Championship // Nations Cup",
+                    "TR": "FIA Gran Turismo Championship // Nations Cup",
+                    "PL": "FIA Gran Turismo Championship // Nations Cup",
+                    "CZ": "FIA Gran Turismo Championship // Nations Cup",
+                    "BP": "FIA Gran Turismo Championship // Nations Cup",
+                    "MS": "FIA Gran Turismo Championship // Nations Cup",
+                    "AR": "FIA Gran Turismo Championship // Nations Cup",
+                    "TH": " FIA Gran Turismo Championship // Nations Cup"
+                  },
+                  "one_line_title": {
+                    "JP": "ネイションズカップ",
+                    "US": "Nations Cup",
+                    "GB": "Nations Cup",
+                    "FR": "Nations Cup",
+                    "DE": "Nations Cup",
+                    "IT": "Nations Cup",
+                    "ES": "Nations Cup",
+                    "PT": "Nations Cup",
+                    "NL": "Nations Cup",
+                    "RU": "Nations Cup",
+                    "KR": "\u200b네이션스 \u200b컵",
+                    "TW": "Nations Cup",
+                    "EL": "Nations Cup",
+                    "TR": "Nations Cup",
+                    "PL": "Nations Cup",
+                    "CZ": "Nations Cup",
+                    "BP": "Nations Cup",
+                    "MS": "Nations Cup",
+                    "AR": "Nations Cup",
+                    "TH": "Nations Cup"
+                  },
+                  "description": {
+                    "JP": "あなたは国・地域の代表選手。そのプライドを賭けて、各国のライバルたちと白熱のバトルを繰り広げよう。ドライブするマシンの生産国は問わない。持てる情熱とテクニックで、母国を勝利に導こう！",
+                    "US": "Represent your country and region in this international driving competition! You're free to choose a vehicle from any manufacturer in the world. Do your country proud by showing the world that your homeland has the best drivers in the world.",
+                    "GB": "You are the driver representing your country and/or territory. Place your pride on the line, and race in heated battles against rivals from other countries! No limits are placed on the country of the car manufacturer. Lead your motherland to victory with your passion and driving skill!",
+                    "FR": "Vous êtes le représentant de votre pays ou territoire. Luttez fièrement contre des adversaires venus d'autres pays ! Aucune limitation de provenance du constructeur. Menez votre mère patrie à la victoire, avec passion et stratégie !",
+                    "DE": "Sie sind der Fahrer und repräsentieren Ihr Land und/oder Gebiet. Zeigen Sie sich patriotisch und tragen Sie hitzige Wettkämpfe gegen Rivalen aus anderen Ländern aus! Das Land des Fahrzeugherstellers wird nicht vorgegeben. Sichern Sie Ihrem Heimatland den Sieg – mit Ihrer Leidenschaft und Ihren Fähigkeiten am Steuer!",
+                    "IT": "In qualità di pilota, rappresenti il tuo paese o territorio. Metti in gioco l'onore e affronta un'accesa competizione con rivali di altre nazioni! Non ci sono limiti di sorta per quanto riguarda la nazionalità della casa produttrice della vettura. Conduci la tua patria alla vittoria, con passione e abilità di guida!",
+                    "ES": "Eres el piloto que representa a tu país o territorio. ¡Que se note tu orgullo en la pista y lucha en acalorados combates contra rivales de otros países! No hay límites en el país del coche del fabricante. Lleva a tu tierra natal a la victoria con tu pasión y tu habilidad al volante.",
+                    "PT": "És um piloto em representação do teu país e/ou território. Coloca o teu orgulho em jogo e disputa corridas competitivas contra rivais de outros países! Não existem limites relativos ao país do fabricante do carro. Usa a tua paixão e habilidade ao volante para levares a tua pátria à vitória!",
+                    "NL": "Jij vertegenwoordigt je land en/of regio. Zet je trots op het spel en neem het op tegen rivalen uit andere landen! Uit welk land het automerk afkomstig is, maakt niet uit. Leid je vaderland naar de overwinning met je passie en rijvaardigheid!",
+                    "RU": "Вы представляете свою страну или территорию. Вспомните о патриотизме и вступите в напряженную борьбу с гонщиками из других стран. При этом вы можете выступать на машинах, произведенных в любом уголке мира: никаких ограничений по маркам и моделям в этом чемпионате нет. Пусть ваше мастерство поможет Родине одержать победу!",
+                    "KR": "\u200b당신은 \u200b국가/\u200b지역의 \u200b대표 \u200b선수. \u200b그 \u200b긍지를 \u200b걸고 \u200b라이벌과 \u200b치열하게 \u200b겨뤄 \u200b나가자. \u200b머신의 \u200b생산지는 \u200b불문. \u200b정열과 \u200b테크닉으로 \u200b모국에게 \u200b승리를 \u200b안기자!",
+                    "TW": "你將代表自己的國家與地區，賭上名譽，在激烈的賽事中出戰他國對手！駕駛車輛的車廠國籍不受限制。拿出熱情與駕駛技術，帶領你的家鄉踏上勝利之路吧！",
+                    "EL": "Εκπροσωπείτε τη χώρα και την περιοχή σας. Ρισκάρετε την υπερηφάνεια σας και αγωνιστείτε σε σκληρές αναμετρήσεις ενάντια σε αντιπάλους από άλλες χώρες! Δεν υπάρχουν περιορισμοί στη χώρα ή στον κατασκευαστή αυτοκινήτου. Οδηγήστε την πατρίδα σας στη νίκη με το πάθος και τις οδηγικές σας ικανότητες!",
+                    "TR": "Ülkenizi ve bölgenizi temsil eden bir sürücüsünüz. Gururla yarışta yer alın ve diğer ülkelerden rakiplere karşı zorlu kapışmalarda yarışın! Otomobil üreticisinin ülkesinde sınır yoktur. Vatanınızı tutkuyla ve sürüş yeteneğinizle zafere taşıyın!",
+                    "PL": "Jesteś kierowcą reprezentującym swój kraj lub region. Bierz udział w zaciętych wyścigach z rywalami z innych krajów, ryzykując swoją dumą. Nie ma ograniczeń, jeśli chodzi o producenta samochodu. Poprowadź swoją ojczyznę do zwycięstwa dzięki pasji i umiejętnej jeździe!",
+                    "CZ": "Jako jezdec reprezentujete svou zemi nebo teritorium. Vsaďte svou hrdost a pusťte se do závodů se soupeři z jiných zemí! Neplatí žádná omezení pro zemi výrobce automobilu. Probuďte svou vášeň i jezdecké dovednosti a doveďte svou vlast k vítězství!",
+                    "BP": "Você é o piloto representante de seu país e/ou território. Coloque seu orgulho em jogo e dispute corridas frenéticas contra rivais de outras partes do mundo! Não há limites para o país do construtor do carro. Use sua paixão e habilidade na direção para conduzir sua pátria à vitória!",
+                    "MS": "Eres el piloto representante de tu país y/o territorio. ¡Haz gala de tu orgullo y corre en batallas reñidas contra rivales de otros países! No hay límites para el país del fabricante del auto. ¡Lleva a tu nación a la victoria con tu pasión y tus habilidades para conducir!",
+                    "AR": "أنت سائق يمثل بلدته و/أو إقليمه. غامر بالمجد، وسابق في معارك ضارية ضد خصومك من دول أخرى. لا توجد قيود على دولة الجهة المصنعة. قُد موطنك إلى النصر من خلال شغفك ومهارتك في القيادة!",
+                    "TH": "\u200bคุณ\u200bคือ\u200bนัก\u200bขับ\u200bที่\u200bเป็น\u200bตัวแทน\u200bประเทศ\u200bและ/\u200bหรือ\u200bดิน\u200bแดน\u200bของ\u200bคุณ \u200bใช้\u200bศักดิ์ศรี\u200bของ\u200bคุณ\u200bเป็น\u200bเดิม\u200bพัน\u200bแล้ว\u200bขับเคี่ยว\u200bใน\u200bการ\u200bแข่งขัน\u200bอัน\u200bดุ\u200bเดือด\u200bกับ\u200bเหล่า\u200bคู่\u200bแข่ง\u200bจาก\u200bประ\u200bเท\u200bศอื่นๆ! \u200bไม่มี\u200bข้อ\u200bจำ\u200bกัด\u200bใดๆ \u200bเกี่ยว\u200bกับ\u200bประเทศ\u200bของ\u200bผู้\u200bผลิต\u200bรถ \u200bจง\u200bใช้\u200bความ\u200bมุ่ง\u200bมั่น\u200bและ\u200bฝีมือ\u200bการ\u200bขับ\u200bนำ\u200bชัยชนะ\u200bมา\u200bสู่\u200bดิน\u200bแดน\u200bมาตุภูมิ\u200bของ\u200bคุณ!"
+                  },
+                  "registration_notice": {
+                    "JP": "",
+                    "US": "",
+                    "GB": "",
+                    "FR": "",
+                    "DE": "",
+                    "IT": "",
+                    "ES": "",
+                    "PT": "",
+                    "NL": "",
+                    "RU": "",
+                    "KR": "",
+                    "TW": "",
+                    "EL": "",
+                    "TR": "",
+                    "PL": "",
+                    "CZ": "",
+                    "BP": "",
+                    "MS": "",
+                    "AR": "",
+                    "TH": ""
+                  },
+                  "event_target": {
+                    "JP": "2020/21 エキシビションシリーズ - シーズン 2",
+                    "US": "2020/21 Exhibition Series - Season 2",
+                    "GB": "2020/21 Exhibition Series - Season 2",
+                    "FR": "Exhibition Series 2020/21 – Saison 2",
+                    "DE": "Exhibition Series 2020/21 – Saison 2",
+                    "IT": "Exhibition Series 2020/21 - Stagione 2",
+                    "ES": "Exhibition Series 2020/2021 – Temporada 2",
+                    "PT": "Série de Exibição de 2020/21 - Temporada 2",
+                    "NL": "Exhibition-serie 2020/21 - Seizoen 2",
+                    "RU": "Выставочная серия 2020/21 - сезон 2",
+                    "KR": "2020/21 \u200b엑시비션 \u200b시리즈 - \u200b시즌 2",
+                    "TW": "2020/2021表演系列賽 – 第2季",
+                    "EL": "Πρωτάθλημα Επιδείξεων 2020/21 - Σεζόν 2",
+                    "TR": "2020/21 Gösteri Serisi - 2. Sezon",
+                    "PL": "2. sezon 2020/21 Exhibition Series",
+                    "CZ": "2. sezona exhibičního seriálu 2020/21",
+                    "BP": "Exhibition Series de 2020/21 - Temporada 2",
+                    "MS": "Exhibition Series 2020/21 - Temporada 2",
+                    "AR": "سلسلة سباقات المعرض 2020/21 - الموسم 2",
+                    "TH": "Exhibition Series 2020/21 \u200b– \u200bฤดูกาล\u200bที่ 2"
+                  },
+                  "event_restrict": {
+                    "JP": "2020/21 エキシビションシリーズ - シーズン 2",
+                    "US": "2020/21 Exhibition Series - Season 2",
+                    "GB": "2020/21 Exhibition Series - Season 2",
+                    "FR": "Exhibition Series 2020/21 – Saison 2",
+                    "DE": "Exhibition Series 2020/21 – Saison 2",
+                    "IT": "Exhibition Series 2020/21 - Stagione 2",
+                    "ES": "Exhibition Series 2020/2021 – Temporada 2",
+                    "PT": "Série de Exibição de 2020/21 - Temporada 2",
+                    "NL": "Exhibition-serie 2020/21 - Seizoen 2",
+                    "RU": "Выставочная серия 2020/21 - сезон 2",
+                    "KR": "2020/21 \u200b엑시비션 \u200b시리즈 - \u200b시즌 2",
+                    "TW": "2020/2021表演系列賽 – 第2季",
+                    "EL": "Πρωτάθλημα Επιδείξεων 2020/21 - Σεζόν 2",
+                    "TR": "2020/21 Gösteri Serisi - 2. Sezon",
+                    "PL": "2. sezon 2020/21 Exhibition Series",
+                    "CZ": "2. sezona exhibičního seriálu 2020/21",
+                    "BP": "Exhibition Series de 2020/21 - Temporada 2",
+                    "MS": "Exhibition Series 2020/21 - Temporada 2",
+                    "AR": "سلسلة سباقات المعرض 2020/21 - الموسم 2",
+                    "TH": "Exhibition Series 2020/21 \u200b– \u200bฤดูกาล\u200bที่ 2"
+                  },
+                  "logo_image_path": "img_1320_ef2bc6d0fbedf3ce58aeab083ca4200a.png",
+                  "flyer_image_path": "img_1321_e99ce61da241c63a2750c0a90c392434.png"
+                },
+                "entry_set": [
+                  {
+                    "entry_generate": {
+                      "player_entry_base_array": null
+                    }
+                  }
+                ],
+                "race": {
+                  "behavior_damage_type": "MIDDLE",
+                  "behavior_slip_stream_type": "REAL",
+                  "boost_level": null,
+                  "low_mu_type": "REAL",
+                  "entry_max": 20,
+                  "start_type": "GRID_FLYING",
+                  "consume_fuel": 3,
+                  "consume_tire": 7,
+                  "race_limit_laps": 13,
+                  "race_limit_minute": 0,
+                  "nos_amount_scale": 1.0,
+                  "pit_constraint": 0,
+                  "need_compound_use": "2",
+                  "limit_fuel_capacity": 0
+                },
+                "ranking": {
+                  "board_id": 1008367,
+                  "begin_date": null,
+                  "end_date": null
+                },
+                "regulation": {
+                  "limit_tire_f": 10,
+                  "need_tire_f": 9,
+                  "use_bop": 1,
+                  "tuning": 1,
+                  "need_driver_class": "-1",
+                  "car_category_types": [
+                    "GR3"
+                  ],
+                  "cars": null,
+                  "cars_count": 0
+                },
+                "refueling_speed": 7,
+                "track_index": 0,
+                "matching_method": 0,
+                "is_uncertain_event": 0,
+                "qualifier_initial_tank": -1,
+                "is_seasonal_event": 0,
+                "begin_date": null,
+                "end_date": null,
+                "online_timeattack_registration_key": null,
+                "online_timeattack_type": null,
+                "np_regions": null
+              }
+            ],
+            "online_room": {
+              "qualifier_consume_tire": -1,
+              "qualifier_consume_fuel": 0
+            },
+            "tracks": [
+              {
+                "course_code": "6335a4f1bf6e220eef83ce627bdc0c8c",
+                "WeatherList": [
+                  {
+                    "weather_id": 3759
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "60"
+      ]
+    }
+  ]
+}

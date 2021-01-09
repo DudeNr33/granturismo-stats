@@ -1,0 +1,209 @@
+{
+  "event": [
+    {
+      "event_id": "24378",
+      "create_time": "2020-12-18T17:39:12Z",
+      "update_time": "2020-12-18T17:39:12Z",
+      "value": [
+        {
+          "GameParameter": {
+            "championship": 0,
+            "events": [
+              {
+                "event_id": 24378,
+                "championship_id": 0,
+                "season_id": 0,
+                "round_id": 0,
+                "championship_color": null,
+                "game_mode": "SPORT_DAILY_RACE",
+                "event_type": "RACE",
+                "sports_mode": "DAILY",
+                "information": {
+                  "title": {
+                    "JP": "デイリーレース B",
+                    "US": "Daily Race B",
+                    "GB": "Daily Race B",
+                    "FR": "Course quotidienne B",
+                    "DE": "Tägliches Rennen B",
+                    "IT": "Gara quotidiana B",
+                    "ES": "Carrera diaria B",
+                    "PT": "Corrida Diária B",
+                    "NL": "Dagelijkse race B",
+                    "RU": "Ежедневная гонка B",
+                    "KR": "\u200b데일리 \u200b레이스 B",
+                    "TW": "每日競賽B",
+                    "EL": "Ημερήσιος Αγώνας B",
+                    "TR": "Günlük Yarış B",
+                    "PL": "Wyścig codzienny B",
+                    "CZ": "Denní závod B",
+                    "BP": "Corrida diária B",
+                    "MS": "Carrera diaria B",
+                    "AR": "السباق اليومي فئة B",
+                    "TH": "\u200bการ\u200bแข่ง\u200bประจำ\u200bวัน B"
+                  },
+                  "one_line_title": {
+                    "JP": "B",
+                    "US": "B",
+                    "GB": "B",
+                    "FR": "B",
+                    "DE": "B",
+                    "IT": "B",
+                    "ES": "B",
+                    "PT": "B",
+                    "NL": "B",
+                    "RU": "B",
+                    "KR": "B",
+                    "TW": "B",
+                    "EL": "B",
+                    "TR": "B",
+                    "PL": "B",
+                    "CZ": "B",
+                    "BP": "B",
+                    "MS": "B",
+                    "AR": "B",
+                    "TH": "B"
+                  },
+                  "description": {
+                    "JP": "",
+                    "US": "",
+                    "GB": "",
+                    "FR": "",
+                    "DE": "",
+                    "IT": "",
+                    "ES": "",
+                    "PT": "",
+                    "NL": "",
+                    "RU": "",
+                    "KR": "",
+                    "TW": "",
+                    "EL": "",
+                    "TR": "",
+                    "PL": "",
+                    "CZ": "",
+                    "BP": "",
+                    "MS": "",
+                    "AR": "",
+                    "TH": ""
+                  },
+                  "registration_notice": {
+                    "JP": "",
+                    "US": "",
+                    "GB": "",
+                    "FR": "",
+                    "DE": "",
+                    "IT": "",
+                    "ES": "",
+                    "PT": "",
+                    "NL": "",
+                    "RU": "",
+                    "KR": "",
+                    "TW": "",
+                    "EL": "",
+                    "TR": "",
+                    "PL": "",
+                    "CZ": "",
+                    "BP": "",
+                    "MS": "",
+                    "AR": "",
+                    "TH": ""
+                  },
+                  "event_target": {
+                    "JP": "",
+                    "US": "",
+                    "GB": "",
+                    "FR": "",
+                    "DE": "",
+                    "IT": "",
+                    "ES": "",
+                    "PT": "",
+                    "NL": "",
+                    "RU": "",
+                    "KR": "",
+                    "TW": "",
+                    "EL": "",
+                    "TR": "",
+                    "PL": "",
+                    "CZ": "",
+                    "BP": "",
+                    "MS": "",
+                    "AR": "",
+                    "TH": ""
+                  },
+                  "event_restrict": null,
+                  "logo_image_path": null,
+                  "flyer_image_path": null
+                },
+                "entry_set": [
+                  {
+                    "entry_generate": {
+                      "player_entry_base_array": null
+                    }
+                  }
+                ],
+                "race": {
+                  "behavior_damage_type": "WEAK",
+                  "behavior_slip_stream_type": "REAL",
+                  "boost_level": null,
+                  "low_mu_type": "REAL",
+                  "entry_max": 16,
+                  "start_type": "FORMATION_ROLL_A",
+                  "consume_fuel": 0,
+                  "consume_tire": 0,
+                  "race_limit_laps": 4,
+                  "race_limit_minute": 0,
+                  "nos_amount_scale": 1.0,
+                  "pit_constraint": 0,
+                  "need_compound_use": "0",
+                  "limit_fuel_capacity": 0
+                },
+                "ranking": {
+                  "board_id": 1030438,
+                  "begin_date": null,
+                  "end_date": null
+                },
+                "regulation": {
+                  "limit_tire_f": 8,
+                  "need_tire_f": 8,
+                  "use_bop": 1,
+                  "tuning": 1,
+                  "need_driver_class": null,
+                  "car_category_types": [
+                    "GR4"
+                  ],
+                  "cars": null,
+                  "cars_count": 0
+                },
+                "refueling_speed": 0,
+                "track_index": 0,
+                "matching_method": 0,
+                "is_uncertain_event": 0,
+                "qualifier_initial_tank": -1,
+                "is_seasonal_event": 0,
+                "begin_date": null,
+                "end_date": null,
+                "online_timeattack_registration_key": null,
+                "online_timeattack_type": null,
+                "np_regions": null
+              }
+            ],
+            "online_room": {
+              "qualifier_consume_tire": -1,
+              "qualifier_consume_fuel": -1
+            },
+            "tracks": [
+              {
+                "course_code": "64b6d4fac5db76024923043b82143e3d",
+                "WeatherList": [
+                  {
+                    "weather_id": 370
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "15"
+      ]
+    }
+  ]
+}
