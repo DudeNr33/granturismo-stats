@@ -9,6 +9,7 @@ python:
 matrix:
   include:
     - stage: integration test
+      python: 3.9
       env:
         - TOXENV=py39-tests -- test/integrationtest
 
