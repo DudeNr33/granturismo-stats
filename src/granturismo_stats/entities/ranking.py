@@ -2,6 +2,7 @@
 Author: Andreas Finkler
 Created: 13.12.2020
 """
+from csv import DictWriter
 from dataclasses import dataclass
 from typing import List
 
@@ -29,6 +30,17 @@ class QualifyingResult:
         ranking_id = int(json_data["ranking_id"])
         return cls(user, score, ranking_id)
 
+    def to_json(self):
+        return {
+            "name": self.user.name,
+            "number": self.user.number,
+            "country": self.user.country,
+            "driver_rating": self.user.driver_rating.value,
+            "sportsmanship_rating": self.user.sportsmanship_rating.value,
+            "score": self.score,
+            "ranking_id": self.ranking_id,
+        }
+
 
 @dataclass
 class Leaderboard:
@@ -42,3 +54,27 @@ class Leaderboard:
             for entry in json_data["ranking"]
         ]
         return cls(entries)
+
+    def to_csv(self, filename):
+        """
+        Save the leaderboard to a CSV file.
+        :param filename: Filename or full path to file
+        :return: None
+        """
+        with open(filename, "w", newline="") as outfile:
+            writer = DictWriter(
+                outfile,
+                fieldnames=[
+                    "name",
+                    "number",
+                    "country",
+                    "driver_rating",
+                    "sportsmanship_rating",
+                    "score",
+                    "ranking_id",
+                ],
+                delimiter=";"
+            )
+            writer.writeheader()
+            for entry in self.entries:
+                writer.writerow(entry.to_json())
