@@ -10,8 +10,7 @@ matrix:
   include:
     - stage: static analysis
       python: 3.8
-      env:
-        - TOXENV=py38-static-analysis
+      script: tox -e static-analysis
     - stage: integration test
       python: 3.9
       env:
