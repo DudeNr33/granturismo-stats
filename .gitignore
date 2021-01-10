@@ -139,3 +139,9 @@ dmypy.json
 /.idea/inspectionProfiles/profiles_settings.xml
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
+/examples/event_details_daily1_week*.txt
+/examples/event_details_daily2_week*.txt
+/examples/event_details_daily3_week*.txt
+/examples/leaderboard_daily1_week*.csv
+/examples/leaderboard_daily2_week*.csv
+/examples/leaderboard_daily3_week*.csv
