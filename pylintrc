@@ -1,6 +1,9 @@
 [MASTER]
 load-plugins=pylint.extensions.mccabe
 
+[BASIC]
+good-names=i,j,k,ex,Run,_,db
+
 [DESIGN]
 max-complexity=10
 min-public-methods=1

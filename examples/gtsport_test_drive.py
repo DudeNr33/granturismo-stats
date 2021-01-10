@@ -28,10 +28,10 @@ def get_leaderboard(sports_mode):
         return db[f"leaderboard_{sports_mode}"]
 
 
-for sports_mode in (api.SportsMode.DAILY_A, api.SportsMode.DAILY_B, api.SportsMode.DAILY_C):
+for mode in (api.SportsMode.DAILY_A, api.SportsMode.DAILY_B, api.SportsMode.DAILY_C):
 
-    print("------", sports_mode, "------\n")
-    leaderboard = get_leaderboard(sports_mode)
+    print("------", mode, "------\n")
+    leaderboard = get_leaderboard(mode)
     for entry in leaderboard.entries:
         if entry.user.name == "dudenr33":
             print(f"Your time: {entry.score}s")
