@@ -35,8 +35,11 @@ setuptools.setup(
             "tox",
         ],
         "tests": [
+            "coverage",
             "pylint",
             "pytest",
+            "pytest-cov",
+            "pytest-pylint",
             "requests-mock",
         ]
     },
