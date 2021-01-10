@@ -8,6 +8,10 @@ python:
 
 matrix:
   include:
+    - stage: static analysis
+      python: 3.8
+      env:
+        - TOXENV=py38-static-analysis
     - stage: integration test
       python: 3.9
       env:
@@ -15,5 +19,9 @@ matrix:
 
 install:
   - pip install tox-travis
+  - if [ "$TRAVIS_PYTHON_VERSION" = "3.9" ]; then pip install coveralls -r example_project/requirements.txt; fi
 
 script: tox
+
+after_success:
+  - if [ "$TRAVIS_PYTHON_VERSION" = "3.9" ]; then coveralls; fi
