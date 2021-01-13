@@ -141,3 +141,6 @@ dmypy.json
 /.idea/vcs.xml
 /examples/event_details_daily*_week*.json
 /examples/leaderboard_daily*_week*.csv
+/examples/leaderboard_cache.bak
+/examples/leaderboard_cache.dat
+/examples/leaderboard_cache.dir

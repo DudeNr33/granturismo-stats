@@ -32,9 +32,16 @@ for mode in (api.SportsMode.DAILY_A, api.SportsMode.DAILY_B, api.SportsMode.DAIL
 
     print("------", mode, "------\n")
     leaderboard = get_leaderboard(mode)
-    for entry in leaderboard.entries:
+    print("Number of entries for driver rating:")
+    for driver_rating in DriverRating:
+        print(f"{driver_rating!r}:  {len([e for e in leaderboard.entries if e.user.driver_rating == driver_rating])}")
+
+    for index, entry in enumerate(leaderboard.entries):
         if entry.user.name == "dudenr33":
-            print(f"Your time: {entry.score}s")
+            print(
+                f"Your time: {entry.score}s "
+                f"(Nr. {index+1} of {len(leaderboard.entries)}, Top {100*(index+1)/len(leaderboard.entries):.1f}%)"
+            )
             break
     else:
         print("You have not set a time yet.")

@@ -57,7 +57,8 @@ def test_to_csv(tmpdir, example_leaderboard):
     filename = tmpdir / "example_leaderboard.csv"
     example_leaderboard.to_csv(filename=filename)
     content = filename.read_text(encoding="utf-8")
-    assert content == "name;number;country;driver_rating;sportsmanship_rating;score;ranking_id\n" \
-                      "User1;1;de;5;S;1234;1\n" \
-                      "User2;2;de;4;A;5678;2\n" \
-                      "User3;3;de;3;B;4714;3\n"
+    assert content == "user_id;user_no;profile_photo_id;driver_display_name;create_time;board_id;user_country;" \
+                      "driver_class;driver_star;manner_point;score;ranking_id;replay\n" \
+                      "User1;1;;;;;de;5;;99;1234;1;\n" \
+                      "User3;3;;;;;de;3;;64;4714;3;\n" \
+                      "User2;2;;;;;de;4;;79;5678;2;\n"

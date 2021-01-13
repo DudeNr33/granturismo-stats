@@ -2,6 +2,7 @@
 Author: Andreas Finkler
 Created: 13.12.2020
 """
+from operator import attrgetter
 from csv import DictWriter
 from dataclasses import dataclass
 from typing import List
@@ -16,6 +17,7 @@ class QualifyingResult:
     user: User
     score: int  # qualifying time in seconds
     ranking_id: int
+    _raw_data: dict = None
 
     @classmethod
     def from_json(cls, json_data):
@@ -28,18 +30,12 @@ class QualifyingResult:
         )
         score = int(json_data["score"])
         ranking_id = int(json_data["ranking_id"])
-        return cls(user, score, ranking_id)
+        instance = cls(user, score, ranking_id)
+        instance._raw_data = json_data
+        return instance
 
     def to_json(self):
-        return {
-            "name": self.user.name,
-            "number": self.user.number,
-            "country": self.user.country,
-            "driver_rating": self.user.driver_rating.value,
-            "sportsmanship_rating": self.user.sportsmanship_rating.value,
-            "score": self.score,
-            "ranking_id": self.ranking_id,
-        }
+        return self._raw_data
 
 
 @dataclass
@@ -53,6 +49,7 @@ class Leaderboard:
             QualifyingResult.from_json(entry)
             for entry in json_data["ranking"]
         ]
+        entries.sort(key=attrgetter("score"))
         return cls(entries)
 
     def to_csv(self, filename):
@@ -65,13 +62,19 @@ class Leaderboard:
             writer = DictWriter(
                 outfile,
                 fieldnames=[
-                    "name",
-                    "number",
-                    "country",
-                    "driver_rating",
-                    "sportsmanship_rating",
+                    "user_id",
+                    "user_no",
+                    "profile_photo_id",
+                    "driver_display_name",
+                    "create_time",
+                    "board_id",
+                    "user_country",
+                    "driver_class",
+                    "driver_star",
+                    "manner_point",
                     "score",
                     "ranking_id",
+                    "replay",
                 ],
                 delimiter=";"
             )
