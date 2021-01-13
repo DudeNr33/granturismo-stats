@@ -34,6 +34,27 @@ def test_event_details_from_json(resource_dir, data, attribute, expected_value):
     assert getattr(event_details, attribute) == expected_value
 
 
+def test_event_details_dump_json(tmpdir, resource_dir):
+    """
+    An instance of EventDetails has the ability to dump its contents to a json file.
+    """
+    # arrange
+    json_data = json.loads(
+        (resource_dir / "responses" / "event" / "event_details_daily_a.json").read_text(encoding="utf-8")
+    )
+    event_details = EventDetails.from_json(json_data)
+    output_file = tmpdir / "example_event_details.json"
+
+    # act
+    event_details.dump_json(output_file)
+
+    # assert
+    data_from_output_file = json.loads(
+        output_file.read_text("utf-8")
+    )
+    assert json_data == data_from_output_file
+
+
 @pytest.mark.parametrize(
     "race,expected_event_id",
     [
@@ -48,6 +69,11 @@ def test_event_calendar_from_json(resource_dir, race, expected_event_id):
     """
     An EventCalendar entity can be created from the JSON data provided by the web api.
     """
+    # arrange
     json_data = json.loads((resource_dir / "responses" / "event" / "event_calendar.json").read_text(encoding="utf-8"))
+
+    # act
     event_calendar = EventCalendar.from_json(json_data)
+
+    # assert
     assert event_calendar.races[race].event_id == expected_event_id
