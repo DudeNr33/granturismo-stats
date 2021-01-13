@@ -34,31 +34,31 @@ for mode in (api.SportsMode.DAILY_A, api.SportsMode.DAILY_B, api.SportsMode.DAIL
     leaderboard = get_leaderboard(mode)
     print("Number of entries for driver rating:")
     for driver_rating in DriverRating:
-        print(f"{driver_rating!r}:  {len([e for e in leaderboard.entries if e.user.driver_rating == driver_rating])}")
+        print(f"{driver_rating!r}:  {len([e for e in leaderboard if e.user.driver_rating == driver_rating])}")
 
-    for index, entry in enumerate(leaderboard.entries):
+    for index, entry in enumerate(leaderboard):
         if entry.user.name == "dudenr33":
             print(
                 f"Your time: {entry.score}s "
-                f"(Nr. {index+1} of {len(leaderboard.entries)}, Top {100*(index+1)/len(leaderboard.entries):.1f}%)"
+                f"(Nr. {index+1} of {len(leaderboard)}, Top {100*(index+1)/len(leaderboard):.1f}%)"
             )
             break
     else:
         print("You have not set a time yet.")
     qualifying_times = QualifyingTimes(deepcopy(leaderboard))
-    print(f"Entries: {len(qualifying_times.leaderboard.entries):>10}")
+    print(f"Entries: {len(qualifying_times.leaderboard):>10}")
     print(f"Best:    {qualifying_times.fastest.score:>10}s")
     print(f"Mean:    {qualifying_times.mean:>10.1f}s")
     print(f"Median:  {qualifying_times.median:>10.1f}s")
 
     print("\nRestricted to Driver Rating B and Sportsmanship Rating S:")
-    qualifying_times.leaderboard.entries = [
+    qualifying_times.leaderboard.data = [
         entry
-        for entry in qualifying_times.leaderboard.entries
+        for entry in qualifying_times.leaderboard
         if entry.user.driver_rating is DriverRating.B
         and entry.user.sportsmanship_rating is SportsmanshipRating.S
     ]
-    print(f"Entries: {len(qualifying_times.leaderboard.entries):>10}")
+    print(f"Entries: {len(qualifying_times.leaderboard):>10}")
     print(f"Best:    {qualifying_times.fastest.score:>10}s")
     print(f"Mean:    {qualifying_times.mean:>10.1f}s")
     print(f"Median:  {qualifying_times.median:>10.1f}s")

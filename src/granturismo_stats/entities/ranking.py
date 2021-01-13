@@ -2,9 +2,10 @@
 Author: Andreas Finkler
 Created: 13.12.2020
 """
-from operator import attrgetter
+from collections import UserList
 from csv import DictWriter
 from dataclasses import dataclass
+from operator import attrgetter
 from typing import List
 
 from granturismo_stats.entities.profile import User
@@ -38,10 +39,11 @@ class QualifyingResult:
         return self._raw_data
 
 
-@dataclass
-class Leaderboard:
+class Leaderboard(UserList):
     """Data class for a qualification leaderboard."""
-    entries: List[QualifyingResult]
+
+    def __init__(self, entries=None):
+        super().__init__(initlist=entries)
 
     @classmethod
     def from_json(cls, json_data):
@@ -79,5 +81,5 @@ class Leaderboard:
                 delimiter=";"
             )
             writer.writeheader()
-            for entry in self.entries:
+            for entry in self:
                 writer.writerow(entry.to_json())

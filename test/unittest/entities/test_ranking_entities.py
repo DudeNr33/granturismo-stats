@@ -49,8 +49,8 @@ def fixture_example_leaderboard(example_json_data):
 
 def test_from_json(example_json_data):
     leaderboard = Leaderboard.from_json(example_json_data)
-    assert len(leaderboard.entries) == 3
-    assert all(isinstance(entry, QualifyingResult) for entry in leaderboard.entries)
+    assert len(leaderboard) == 3
+    assert all(isinstance(entry, QualifyingResult) for entry in leaderboard)
 
 
 def test_to_csv(tmpdir, example_leaderboard):

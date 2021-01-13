@@ -144,3 +144,4 @@ dmypy.json
 /examples/leaderboard_cache.bak
 /examples/leaderboard_cache.dat
 /examples/leaderboard_cache.dir
+/examples/leaderboard_cache.db

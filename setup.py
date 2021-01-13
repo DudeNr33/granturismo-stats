@@ -1,5 +1,5 @@
 """
-Setup script for gtsport-stats.
+Setup script for granturismo-stats.
 """
 import setuptools
 

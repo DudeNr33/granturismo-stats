@@ -9,4 +9,4 @@ from granturismo_stats.entities.race import SportsMode
 
 def test_get_leaderboard():
     result = api.get_event_leaderboard(SportsMode.DAILY_B)
-    assert len(result.entries) > 0
+    assert len(result) > 0

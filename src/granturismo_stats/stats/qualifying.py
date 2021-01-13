@@ -20,15 +20,15 @@ class QualifyingTimes:
 
     @property
     def scores(self):
-        return [entry.score for entry in self.leaderboard.entries]
+        return [entry.score for entry in self.leaderboard]
 
     @property
     def fastest(self):
-        return min(self.leaderboard.entries, key=attrgetter("score"))
+        return min(self.leaderboard, key=attrgetter("score"))
 
     @property
     def slowest(self):
-        return max(self.leaderboard.entries, key=attrgetter("score"))
+        return max(self.leaderboard, key=attrgetter("score"))
 
     @property
     def median(self):
