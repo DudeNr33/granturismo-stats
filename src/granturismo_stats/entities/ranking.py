@@ -6,7 +6,6 @@ from collections import UserList
 from csv import DictWriter
 from dataclasses import dataclass
 from operator import attrgetter
-from typing import List
 
 from granturismo_stats.entities.profile import User
 from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
@@ -18,7 +17,7 @@ class QualifyingResult:
     user: User
     score: int  # qualifying time in seconds
     ranking_id: int
-    _raw_data: dict = None
+    raw_data: dict = None
 
     @classmethod
     def from_json(cls, json_data):
@@ -32,14 +31,14 @@ class QualifyingResult:
         score = int(json_data["score"])
         ranking_id = int(json_data["ranking_id"])
         instance = cls(user, score, ranking_id)
-        instance._raw_data = json_data
+        instance.raw_data = json_data
         return instance
 
     def to_json(self):
-        return self._raw_data
+        return self.raw_data
 
 
-class Leaderboard(UserList):
+class Leaderboard(UserList):  # pylint: disable=too-many-ancestors
     """Data class for a qualification leaderboard."""
 
     def __init__(self, entries=None):

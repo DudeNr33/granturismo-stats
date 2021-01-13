@@ -13,7 +13,7 @@ class EventDetails:
     """Detailed information of a single race event."""
     sports_mode: SportsMode
     leaderboard_id: str
-    _raw_data: dict = None
+    raw_data: dict = None
 
     @classmethod
     def from_json(cls, json_data):
@@ -23,15 +23,15 @@ class EventDetails:
             sports_mode=SportsMode.from_one_line_title(event_infos["information"]["one_line_title"]["US"]),
             leaderboard_id=event_infos["ranking"]["board_id"]
         )
-        instance._raw_data = json_data
+        instance.raw_data = json_data
         return instance
 
     def dump_json(self, filename):
         """Dump the raw json data to a file"""
-        if self._raw_data is None:
+        if self.raw_data is None:
             raise ValueError("No raw data stored (probably not created from json), cannot dump")
         with open(filename, "w") as outfile:
-            json.dump(self._raw_data, outfile)
+            json.dump(self.raw_data, outfile)
 
 
 class EventCalendar:
