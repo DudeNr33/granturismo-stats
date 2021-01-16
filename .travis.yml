@@ -9,12 +9,11 @@ python:
 matrix:
   include:
     - stage: static analysis
-      python: 3.8
+      python: 3.9
       script: tox -e static-analysis
     - stage: integration test
       python: 3.9
-      env:
-        - TOXENV=py39-tests -- test/integrationtest
+      script: tox -e py39-tests -- test/integrationtest
 
 install:
   - pip install tox-travis
