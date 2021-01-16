@@ -11,9 +11,22 @@ matrix:
     - stage: static analysis
       python: 3.9
       script: tox -e static-analysis
+
     - stage: integration test
       python: 3.9
       script: tox -e py39-tests -- test/integrationtest
+
+    - stage: deploy
+      name: "Deploy to PyPI"
+      deploy:
+        provider: pypi
+        username: "__token__"
+        password:
+          secure: YJxAQkupOv8mC5ubhWj7QY0ZkqcUFStmkc7EwD/1cNwF7cRautZnMWurD6+7YqqhsLOPSxTtT0CsvKF0rH9nI+Zx4iL1dIW+u6zypR0Tgjfj/Xl1GgWxcBxlRXHqw8anALcFyD1+MKES6HFbrb06xf8fiTHNb4Dy17BxivxGub/wYqzfmYlnszQWse9bPjCdf+4IaB5YGaGt2wCjBzbGPQ0erlxz7k9+VA+2mUPVoJzpZ5hZMSB5WOapwV4/yPGy8Xt6HQD5Gtlu8afRwvmQEBK7s68MANcjpxv4q9FYqfZd5iGfmi6sFgWQ5g1zsREYfMlwV0MS2pyLwisah9W2AuRzQpVTis6D/Odod2ebnVBQoR5e9NJDeAmrQ7qBGtX5OLi7XPgcxCjGSmvIlxSwt4GYS11C872ITBiJyLFGYstGVM0U5IXWGsbfTYo6pncO7jDckN9VSQILpjxn8BwUP9oTBmo9MXnkBy3l0kyO0Is5W/cpd9aGN+02q2Lh98KYW/6T4/sj1cUEzccHUMmvWiKxeis8eZVJ/P1cC607fvitmqKpLDctFX+37G66m+jpReaXAfa59fFWkjWRzRD+lxcvlsoczizyP/CgOnKTtHyvhRlURYY8USFDouZRcdQ5mm4BqrCJ80CyHJpSqBv0cIOkWwLi2QeynviH4rey86U=
+        on:
+          tags: true
+        skip_existing: true
+        distributions: "sdist bdist_wheel"
 
 install:
   - pip install tox-travis
