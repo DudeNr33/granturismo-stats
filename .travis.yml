@@ -17,9 +17,9 @@ matrix:
     name: Deploy to PyPI
     deploy:
       provider: pypi
-      username: __token__
+      username: "__token__"
       password:
-        secure: ayTjr2s/zwqxMI553Lnqdw6Jss/0yP2KBovAXe2j/A0yqtuaVcXFoGlSHA/OAnu9mKYDB2ndtg74ELtXdIWTh3K3QJneSdeYRFiLRE16N1Rit+banbZF/nj1Sghn79FNjPL810aJQy+/K0tcFpKNprIuQ8Nv/BtJ7cEAs2F8+oQjHp5TMr8yCnJ3UnJArCOONX9/mByvfcuyZBZpxlg2SvuHfXIa8OD8cMsSsRf+8U0z1lNmta4F7RduG+6oOj+uMZG3ZLaRi6FLaLheJcZvlvnWNh9u5hn4kAVw9hvnQ3AJlZyLcTprpzX9Lv8XK5xApNhfGwmX5HK441PkRkhTolv/JzsaFwtLfN5wufFhbIIWdhaNBQ4FH4M+x9v+UcV3mGBf0GqXbAyRQONAF5MmUlg4sjYEzystUE9pJPqvnS+EjNR8vL/FFXdyB+q57MLgQ/u17CyK3gqLZFvDS2SyNv0joD5Vyb20YevMXl9z2WW74WLocLx7rGnG67WfkmNPtzMzp/mU2Kr8UCYpX2asJbN2ED53zIJG0hkpdibGUY8peEEaFG8FC/uskMKqZPRtR/VPdkylYkr0FebRSd9eeitLFw6/fu54VtsRMxT1xbhLc9b4KcAy5VbJtbw21mbuemElKG57A4bdWQJboVTAhJyAD1U9AMBySZRXCsY0Yfc=
+        secure: "KpNR5XY2sC5TRmdqmV8qUWkG0VICpDN58j8JPe72IMrzRslgeuAFLUZh9otI9kNQsMUD3ri2fTdHJ9GCvdX+FjsXJoxefD2M/pOSIepZgH6wlY0IbJC7+44zICh2bwI85YjVdNmNOiuFfHi3wt9a8FAtrI8WejY38tSEHQq1IBTeud54MpivBu4lUqT9gzvzbDXSFr1zBDRu/0VJ3TejV8W3KLRlBA0ULW2f/OXRaKceLeUd0JTRxFD6u85eWAk9ypidJ8wdeQihjYYCjqZHi/3ZJ6YvQbk9qgpEbo7JTf/J9xWw1FGiGA7arGg4MmAiUunxR0LIi1b6Rnwx9SYAJpv1lchlaG5bkeDZh1Ef9SdUIBHRFWcWS9AXWx+XKBK5cD7XdyJB4QzVVUep1kGOV3FxE6HP3bmVzol+28FtkO3nF/+RxLpqR1I/oh0tqO+00Fy9gEU9Q/CYvgOb/LUxT9DykLD4TvfE+v3sePMuZYawRMQQq2T8vIROojudUOYhYuKRY/AGh0cFc/1ie/Con0NceUWzCdqUDA/q67AKcgluKfBQmkH3Fd8tSMhMhlnu7fFuee/umsY8cr7sZJl8JI3wLqqBF2P0l+P62NErJ70wVU8wyLSifeDXoK0S88sazhRueW4Gmiy5uHIu8hwxRNjDpy+x4M6AYl6xURnFS5Y="
       on:
         tags: true
       skip_existing: true
