@@ -43,5 +43,5 @@ totally fine, but doing so over and over again without a pause in an endless loo
 generate a lot of traffic on the server side.  
 I intend to implement a caching mechanism so that executing a script multiple times will 
 become faster on the one hand and produce less traffic on the other.
-Until then, check out the *get_leaderboard* function the *gtsport_test_drive.py* in the
+Until then, check out the *get_leaderboard* function of *gtsport_test_drive.py* in the
 *examples* directory how to do it yourself.

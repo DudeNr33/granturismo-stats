@@ -33,6 +33,10 @@ setuptools.setup(
     extras_require={
         "dev": [
             "tox",
+            "setuptools",
+            "wheel",
+            "twine",
+            "check-manifest",
         ],
         "tests": [
             "coverage",
@@ -44,9 +48,11 @@ setuptools.setup(
         ]
     },
     classifiers=[
+        "Development Status :: 3 - Alpha",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
-        "Operating System :: Microsoft :: Windows",
+        "Operating System :: OS Independent",
+        "Topic :: Games/Entertainment :: Simulation",
     ],
     python_requires='>=3.5'
 )
