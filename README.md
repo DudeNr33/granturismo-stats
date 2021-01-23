@@ -45,3 +45,7 @@ I intend to implement a caching mechanism so that executing a script multiple ti
 become faster on the one hand and produce less traffic on the other.
 Until then, check out the *get_leaderboard* function of *gtsport_test_drive.py* in the
 *examples* directory how to do it yourself.
+
+## Kudos
+The unofficial GT Sport API documentation from Alex Persian made the whole process a lot easier:
+https://github.com/alexpersian/gt7sp-api 
