@@ -25,6 +25,7 @@ def fixture_resource_dir():
 def fixture_gtsport_api(requests_mock):
     _setup_event_endpoint(requests_mock)
     _setup_ranking_endpoint(requests_mock)
+    _setup_localization_endpoint(requests_mock)
     yield requests_mock
 
 
@@ -53,6 +54,14 @@ def _setup_event_endpoint(api_mock):
 def _setup_ranking_endpoint(api_mock):
     endpoint = "ranking/"
     api_mock.post(BASE_URL + endpoint)
+
+
+def _setup_localization_endpoint(api_mock):
+    localization_file = RESOURCE_DIR / "responses" / "localization" / "localization_us.json"
+    api_mock.get(
+        "https://www.gran-turismo.com/us/gtsport/module/community/localize",
+        text=localization_file.read_text(encoding="utf-8")
+    )
 
 
 def _parse_request_body(body):
