@@ -9,6 +9,7 @@ from granturismo_stats.entities.race import SportsMode
 from granturismo_stats.api import localization
 
 
+# pylint: disable=too-many-instance-attributes
 @dataclass
 class EventDetails:
     """Detailed information of a single race event."""
