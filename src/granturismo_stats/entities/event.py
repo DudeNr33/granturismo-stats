@@ -6,21 +6,33 @@ import json
 from dataclasses import dataclass
 
 from granturismo_stats.entities.race import SportsMode
+from granturismo_stats.api import localization
 
 
 @dataclass
 class EventDetails:
     """Detailed information of a single race event."""
     sports_mode: SportsMode
+    track: str
+    laps: int
+    maximum_players: int
+    start_type: str
+    car_category: list
     leaderboard_id: str
     raw_data: dict = None
 
     @classmethod
     def from_json(cls, json_data):
-        """Construct an EventCalendar from JSON data received from the web API"""
+        """Construct EventDetails from JSON data received from the web API"""
         event_infos = json_data["event"][0]["value"][0]["GameParameter"]["events"][0]
+        track_infos = json_data["event"][0]["value"][0]["GameParameter"]["tracks"][0]
         instance = cls(
             sports_mode=SportsMode.from_one_line_title(event_infos["information"]["one_line_title"]["US"]),
+            track=localization.get_track_name_by_course_code(track_infos["course_code"]),
+            laps=event_infos["race"]["race_limit_laps"],
+            maximum_players=event_infos["race"]["entry_max"],
+            start_type=event_infos["race"]["start_type"],
+            car_category=event_infos["regulation"]["car_category_types"],
             leaderboard_id=event_infos["ranking"]["board_id"]
         )
         instance.raw_data = json_data
