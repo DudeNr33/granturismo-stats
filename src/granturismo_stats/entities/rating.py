@@ -47,17 +47,19 @@ class SportsmanshipRating(Enum):
     @classmethod
     def from_manner_points(cls, points):
         """Construct a class instance from an integer value."""
-        if points is None:
-            return cls.UNKNOWN
-        points = int(points)
-        if points >= 80:
-            return cls.S
-        if points >= 65:
-            return cls.A
-        if points >= 40:
-            return cls.B
-        if points >= 20:
-            return cls.C
-        if points >= 10:
-            return cls.D
-        return cls.E
+        rating = cls.UNKNOWN
+        if points is not None:
+            points = int(points)
+            if points >= 80:
+                rating = cls.S
+            elif points >= 65:
+                rating = cls.A
+            elif points >= 40:
+                rating = cls.B
+            elif points >= 20:
+                rating = cls.C
+            elif points >= 10:
+                rating = cls.D
+            else:
+                rating = cls.E
+        return rating

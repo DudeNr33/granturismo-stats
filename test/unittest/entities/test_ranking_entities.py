@@ -68,6 +68,8 @@ def test_missing_rating():
             ]
         }
     )
+    # suppress false positive
+    # pylint: disable=no-member
     assert leaderboard[0].user.driver_rating is DriverRating.UNKNOWN
     assert leaderboard[0].user.sportsmanship_rating is SportsmanshipRating.UNKNOWN
 
