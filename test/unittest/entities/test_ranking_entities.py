@@ -5,6 +5,7 @@ Created: 22.12.2020
 import pytest
 
 from granturismo_stats.entities.ranking import Leaderboard, QualifyingResult
+from granturismo_stats.entities.rating import DriverRating, SportsmanshipRating
 
 
 @pytest.fixture(name="example_json_data")
@@ -51,6 +52,24 @@ def test_from_json(example_json_data):
     leaderboard = Leaderboard.from_json(example_json_data)
     assert len(leaderboard) == 3
     assert all(isinstance(entry, QualifyingResult) for entry in leaderboard)
+
+
+def test_missing_rating():
+    leaderboard = Leaderboard.from_json(
+        {
+            "ranking": [
+                {
+                    "user_id":      "User1",
+                    "user_no":      1,
+                    "user_country": "de",
+                    "score":        1234,
+                    "ranking_id":   1,
+                }
+            ]
+        }
+    )
+    assert leaderboard[0].user.driver_rating is DriverRating.UNKNOWN
+    assert leaderboard[0].user.sportsmanship_rating is SportsmanshipRating.UNKNOWN
 
 
 def test_to_csv(tmpdir, example_leaderboard):

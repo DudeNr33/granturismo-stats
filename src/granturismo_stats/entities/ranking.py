@@ -25,8 +25,8 @@ class QualifyingResult:
             name=json_data["user_id"],
             number=json_data["user_no"],
             country=json_data["user_country"],
-            driver_rating=DriverRating.from_driver_class(json_data["driver_class"]),
-            sportsmanship_rating=SportsmanshipRating.from_manner_points(json_data["manner_point"])
+            driver_rating=DriverRating.from_driver_class(json_data.get("driver_class", 0)),
+            sportsmanship_rating=SportsmanshipRating.from_manner_points(json_data.get("manner_point", None))
         )
         score = int(json_data["score"])
         ranking_id = int(json_data["ranking_id"])

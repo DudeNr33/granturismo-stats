@@ -9,6 +9,7 @@ class DriverRating(IntEnum):
     """
     Enumeration of driver ratings. The integer values correspond to the ones used in the GTSport API.
     """
+    UNKNOWN = 0
     E = 1
     D = 2
     C = 3
@@ -20,6 +21,7 @@ class DriverRating(IntEnum):
     def from_driver_class(cls, driver_class):
         """Construct a class instance from an integer value."""
         mapping = {
+            0: cls.UNKNOWN,
             1: cls.E,
             2: cls.D,
             3: cls.C,
@@ -34,6 +36,7 @@ class SportsmanshipRating(Enum):
     """
     Enumeration of sportsmanship ratings.
     """
+    UNKNOWN = "unknown"
     S = "S"
     A = "A"
     B = "B"
@@ -44,6 +47,8 @@ class SportsmanshipRating(Enum):
     @classmethod
     def from_manner_points(cls, points):
         """Construct a class instance from an integer value."""
+        if points is None:
+            return cls.UNKNOWN
         points = int(points)
         if points >= 80:
             return cls.S
