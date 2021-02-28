@@ -38,5 +38,9 @@ class QualifyingTimes:
     def mean(self):
         return np.mean(self.scores)
 
+    @property
+    def standard_deviation(self):
+        return np.std(self.scores)
+
     def percentile(self, percent):
         return np.percentile(self.scores, percent)

@@ -59,6 +59,15 @@ def test_mean(raw_data, qualifying_times):
     )
 
 
+def test_standard_deviation(raw_data, qualifying_times):
+    """
+    It must be possible to obtain the standard deviation of the qualifying results.
+    """
+    assert qualifying_times.standard_deviation == np.std(
+        [int(entry["score"]) for entry in raw_data["ranking"]]
+    )
+
+
 @pytest.mark.parametrize("percentile", [5, 10, 50])
 def test_percentile(qualifying_times, percentile):
     """
