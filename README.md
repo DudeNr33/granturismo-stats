@@ -8,6 +8,8 @@ Statistics for Gran Turismo online events
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/granturismo-stats)
 ![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/DudeNr33/granturismo-stats)
 
+> As Gran Turismo Servers are no longer available, this repository was archived.
+
 ## Purpose
 I started this project because I wanted to see how my qualifying times for the 
 Gran Turismo Sport daily races compare to other drivers with similar driver and sportsmanship rating.
